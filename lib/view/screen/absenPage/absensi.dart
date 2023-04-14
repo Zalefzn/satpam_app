@@ -26,8 +26,8 @@ class _Absensi extends State<AbsensiPage> {
 
   Future<void> getImage() async {
     final ImagePicker _picker = ImagePicker();
-    final PickedFile? imagePicked =
-        await _picker.getImage(source: ImageSource.camera);
+    final XFile? imagePicked =
+        await _picker.pickImage(source: ImageSource.camera);
     imageData = File(imagePicked!.path);
     setState(() {});
   }

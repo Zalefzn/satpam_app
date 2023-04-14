@@ -18,7 +18,7 @@ class _Login extends State<LoginPage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   bool warnaTombol = false;
-
+  
   @override
   Widget build(BuildContext context) {
     Widget headers() {
@@ -35,7 +35,7 @@ class _Login extends State<LoginPage> {
                 )),
           ),
           Container(
-            margin: EdgeInsets.all(15),
+            margin: const EdgeInsets.all(15),
             height: 70,
             width: 70,
             decoration: const BoxDecoration(
